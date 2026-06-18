@@ -30,7 +30,7 @@ OpenAI Whisper	Speech-to-text transcription
 Regex (re module)	Filler word pattern matching
 FFmpeg	Audio decoding (required by Whisper)
 - Project Structure:
-filler_word_detect or/
+- filler_word_detect or/
 │
 ├── app.py               ← Main script (run this)
 ├── requirements.txt     ← Python dependencies
@@ -51,10 +51,10 @@ This installs Whisper and all required libraries.
 Step 3 — Install FFmpeg
 Whisper uses FFmpeg to decode audio files. Install it based on your OS:
 
-Windows:
+- Windows:
 
 Download from https://www.gyan.dev/ffmpeg/builds/
-Extract the ZIP file
+- Extract the ZIP file
 Add the bin folder path to your system's Environment Variables → PATH
 macOS:
 
@@ -62,13 +62,13 @@ brew install ffmpeg
 Linux:
 
 sudo apt install ffmpeg
-▶️ How to Run
+- How to Run
 Place your .wav audio files inside the audios/ folder
 Run the script:
 python app.py
 That's it! The system will process each file and print JSON output to the console.
 
-How It Works:
+- How It Works:
 ┌─────────────┐
 │  Audio File │  (.wav)
 └──────┬──────┘
