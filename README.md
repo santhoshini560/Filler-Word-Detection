@@ -1,19 +1,19 @@
 🎙️ Filler Word Detection System
 An AI-powered tool that listens to speech audio, transcribes it, and automatically detects hesitation filler words — giving you structured JSON output with detailed counts.
- What Is This?
+- What Is This?
 When people speak, they often use filler words like "um", "uh", "like", or "you know" without realizing it. This project helps identify and count those fillers automatically.
 
-It works in two steps:
+- It works in two steps:
 
-Speech → Text using OpenAI Whisper (AI-based transcription)
-Text → Filler Analysis using regex-based pattern matching
-The result is a clean JSON report showing exactly how many fillers were detected and which ones.
+* Speech → Text using OpenAI Whisper (AI-based transcription)\
+* Text → Filler Analysis using regex-based pattern matching
+* The result is a clean JSON report showing exactly how many fillers were detected and which ones.
 
-Why Use This?
-Coaches and teachers can analyze student or speaker fluency
-Public speakers can self-review their recordings
-Researchers can study hesitation patterns in speech
-Developers can integrate it into speech analysis pipelines
+- Why Use This?
+- Coaches and teachers can analyze student or speaker fluency
+- Public speakers can self-review their recordings
+- Researchers can study hesitation patterns in speech
+- Developers can integrate it into speech analysis pipelines
 
 Features
 
@@ -25,21 +25,21 @@ Features
 - Tech Stack
 Tool	Purpose:
 
-Python	Core language
-OpenAI Whisper	Speech-to-text transcription
-Regex (re module)	Filler word pattern matching
-FFmpeg	Audio decoding (required by Whisper)
+- Python	Core language
+- OpenAI Whisper	Speech-to-text transcription
+- Regex (re module)	Filler word pattern matching
+- FFmpeg	Audio decoding (required by Whisper)
 - Project Structure:
 - filler_word_detect or/
-│
-├── app.py               ← Main script (run this)
-├── requirements.txt     ← Python dependencies
-├── README.md            ← Project documentation
-└── audios/              ← Put your audio files here
-      ├── audio1.wav
-      ├── audio2.wav
-      └── audio3.wav
-Installation:
+- │
+- ├── app.py               ← Main script (run this)
+- ├── requirements.txt     ← Python dependencies
+- ├── README.md            ← Project documentation
+- └── audios/              ← Put your audio files here
+     -  ├── audio1.wav
+      - ├── audio2.wav
+      - └── audio3.wav
+- Installation:
 
 Step 1 — Clone or Download the Project
 git clone https://github.com/your-username/filler-word-detector.git
@@ -111,7 +111,7 @@ The output would be:
     }
 }
 Screenshot 2026-06-14 201903
-🧪 Supported Audio Formats
+- Supported Audio Formats
 Whisper + FFmpeg support a wide range of formats:
 
 .wav
@@ -126,13 +126,13 @@ Accent sensitivity — Whisper handles most accents well, but very strong accent
 Background noise — Heavy background noise can affect transcription quality. Use clean audio for best results.
 Roadmap / Future Ideas:
 
- Add support for more filler words (so, basically, right)
- Generate a per-sentence filler breakdown
- Add a confidence score per detection
- Build a simple web UI with Flask or Streamlit
- Export results to CSV alongside JSON
- Conclusion:
-This project demonstrates how AI-based speech transcription (Whisper) combined with lightweight NLP (regex) can produce a practical, useful tool — without needing complex ML models for the analysis step. It's simple, extensible, and easy to integrate into larger speech analysis workflows.
+ - Add support for more filler words (so, basically, right)
+ - Generate a per-sentence filler breakdown
+ - Add a confidence score per detection
+ - Build a simple web UI with Flask or Streamlit
+ - Export results to CSV alongside JSON
+ -  Conclusion:
+    This project demonstrates how AI-based speech transcription (Whisper) combined with lightweight NLP (regex) can produce a practical, useful tool — without         needing complex ML models for the analysis step. It's simple, extensible, and easy to integrate into larger speech analysis workflows.
 
-filler_word_detector:
-AI-powered tool that transcribes speech audio using Whisper and detects hesitation filler words (um, uh, like, you know) with regex-based NLP. Outputs structured JSON with filler counts.
+- filler_word_detector:
+    AI-powered tool that transcribes speech audio using Whisper and detects hesitation filler words (um, uh, like, you know) with regex-based NLP. Outputs             structured JSON with filler counts.
